@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProEduHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <h1>ProEduHub</h1>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Professional</a>
+            <a href="#">Educational</a>
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Welcome to ProEduHub</h2>
+        <p>Login to explore job opportunities and educational resources</p>
+        <button onclick="showDashboard('user')">Login as User</button>
+        <button onclick="showDashboard('admin')">Login as Admin</button>
+    </div>
+
+    <div id="user-dashboard" class="dashboard hidden">
+        <h2>User Dashboard</h2>
+        <button>📝 Create CV</button>
+        <button>🔍 AI Job Search</button>
+        <button>📄 Apply Job</button>
+        <button>🎤 Interview Prep</button>
+        <button>📢 Notices</button>
+        <button>📚 Study Materials</button>
+        <button>📊 CGPA Calculator</button>
+    </div>
+
+    <div id="admin-dashboard" class="dashboard hidden">
+        <h2>Admin Dashboard</h2>
+        <button>➕ Post Job</button>
+        <button>📂 View Applications</button>
+        <button>✅ Hire Employee</button>
+        <button>📢 Post Notice</button>
+        <button>📂 Upload Study Materials</button>
+    </div>
+</body>
+</html>
